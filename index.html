@@ -115,8 +115,6 @@
 
       // the shaders are written in WGSL and are passed to the gpu as strings
       // the shader code is contained in createShaderModule()
-      // the first line of code makes a vector with the GRID_SIZE values
-      // the return in the vector shader divides the position by the grid
       const cellShaderModule = device.createShaderModule({
         label: 'Cell shader',
         code: `
